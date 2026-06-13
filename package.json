@@ -1,0 +1,23 @@
+{
+  "name": "rahul-shetty-pw-course",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test webapi.spec.js --project=chromium --headed",
+    "webUi": "npx playwright test --grep @ui",
+    "api": "npx playwright test --grep @api",
+    "cucumber": "npx cucumber-js --tags '@ui' --exit --format –retries 1 html:cucumber-report.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@azure/identity": "^4.13.1",
+    "@azure/playwright": "^1.1.6",
+    "@cucumber/cucumber": "^12.9.0",
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.5.0",
+    "allure-playwright": "^3.10.0"
+  }
+}
