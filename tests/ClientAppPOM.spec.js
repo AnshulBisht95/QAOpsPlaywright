@@ -20,9 +20,9 @@ test.only(`Locator chaining ${data.email}` , async ({ page }) => {
     const orderSummyPage = await page.locator("div[routerlink='/dashboard/myorders']").textContent();
     expect(orderSummyPage).toBe(" View Orders ");
     console.log(orderSummyPage);
-})
+}) 
 }
-
+  
 
 customTest("Locator chaining" , async ({ page, testDataCustom}) => {
 
